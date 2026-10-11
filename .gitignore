@@ -1,5 +1,14 @@
-# Object file
-*.o
-
-# Ada Library Information
-*.ali
+.venv/
+venv/
+__pycache__/
+*.pyc
+.DS_Store
+metastore_db/
+derby.log
+spark-warehouse/
+lab1/pipeline-storage/*
+!lab1/pipeline-storage/.gitkeep
+lab1/warehouse/**
+!lab1/warehouse/.gitkeep
+!lab1/warehouse/lab1/
+!lab1/warehouse/lab1/.gitkeep

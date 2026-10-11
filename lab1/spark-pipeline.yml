@@ -1,0 +1,9 @@
+# Pipeline spec. `storage` is the checkpoint directory and must be an absolute file:// path.
+# Tables are created in the Iceberg catalog named in conf/spark-defaults.conf.
+name: customers
+catalog: dev
+database: lab1
+storage: file:///Users/sshah/IdeaProjects/Learn/spark-dp-examples/lab1/pipeline-storage
+libraries:
+  - glob:
+      include: transformations/**
